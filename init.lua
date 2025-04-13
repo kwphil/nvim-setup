@@ -36,5 +36,8 @@ vim.opt.termguicolors = true
 -- empty setup using defaults
 require('nvim-tree').setup()
 
+-- call rust-tools to setup rustaceanvim
+require('rust-tools')
+
 -- And then run vimscript for keybindings and whatnot
 vim.cmd[[ source ~/.config/nvim/vim/keybinds.vim ]]
