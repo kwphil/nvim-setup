@@ -39,5 +39,8 @@ require('nvim-tree').setup()
 -- call rust-tools to setup rustaceanvim
 require('rust-tools')
 
+-- call cmpsetup to set up nvim-cmp
+require('cmpsetup')
+
 -- And then run vimscript for keybindings and whatnot
 vim.cmd[[ source ~/.config/nvim/vim/keybinds.vim ]]

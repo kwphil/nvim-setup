@@ -1,3 +1,12 @@
 tbh i dont really care what you do with this, no license cuz i dont care
 
-This is mostly just for me, which is being built for C/C++ and Rust
+This is mostly just for me, which is being built for C/C++ and Rust as well as others
+
+I highly recommended getting a nerd font for this, and I also use Wezterm, it looks a little better with this setup
+
+If you want a list of commands look at [commands.md]
+
+DEPENDENCIES
+- lua (ofc)
+- clang
+- lazygit

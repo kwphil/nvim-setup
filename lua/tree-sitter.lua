@@ -1,5 +1,5 @@
 return {
-	ensure_installed = { 'lua', 'rust', 'toml', 'markdown' },
+	ensure_installed = require'ensure_installed',
 	auto_install = true,
 	hightlight = {
 		enable = true,
