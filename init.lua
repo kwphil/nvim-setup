@@ -1,4 +1,5 @@
 -- disable netrw at start
+-- (For nvim-tree)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -32,15 +33,6 @@ require('config.lazy')
 
 -- set 24-bit color cuz why not
 vim.opt.termguicolors = true
-
--- empty setup using defaults
-require('nvim-tree').setup()
-
--- call rust-tools to setup rustaceanvim
-require('rust-tools')
-
--- call cmpsetup to set up nvim-cmp
-require('cmpsetup')
 
 -- And then run vimscript for keybindings and whatnot
 vim.cmd[[ source ~/.config/nvim/vim/keybinds.vim ]]
