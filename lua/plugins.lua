@@ -1,6 +1,9 @@
 return {
-	{ 'williamboman/mason.nvim', opts={} },
-	{ 'nvim-tree/nvim-tree.lua', opts={} },
+	-- Files
+    { 'nvim-tree/nvim-tree.lua', opts={} },
+    { 'nvim-tree/nvim-web-devicons', opts={} },
+
+    { 'williamboman/mason.nvim', opts={} },
 	{ 'mrcjkb/rustaceanvim', lazy = false },
 	{ 'nvim-lua/completion-nvim' },
     { 'simrat39/rust-tools.nvim' },
