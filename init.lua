@@ -7,7 +7,15 @@ vim.cmd[[ source ~/.config/nvim/vim/keybinds.vim ]]
 -- I'm moving this here so the rest of the init setup works at least 
 require'lazysetup'
 
--- disable netrw at start
+-- disable netrw
 -- (For nvim-tree)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+vim.cmd.colorscheme('tokyonight')
+
+require'lualine'.setup {
+    options={
+        theme='tokyonight'
+    }
+}

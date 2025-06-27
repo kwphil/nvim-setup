@@ -1,27 +1,44 @@
 return {
-	-- Files
-    { 'nvim-tree/nvim-tree.lua', opts={} },
-    { 'nvim-tree/nvim-web-devicons', opts={} },
+    -- Files & Icons
+    { 'nvim-tree/nvim-tree.lua', opts = {} },
+    { 'nvim-tree/nvim-web-devicons', opts = {} },
 
-    { 'williamboman/mason.nvim', opts={} },
-	{ 'mrcjkb/rustaceanvim', lazy = false },
-	{ 'nvim-lua/completion-nvim' },
+    -- Commandline & Popup UI
+    { 'MunifTanjim/nui.nvim' },
+    { 'rcarriga/nvim-notify' },
+    { 'folke/noice.nvim', event = 'VeryLazy', opts = {} },
+
+    -- UI & Theming
+    { 'folke/tokyonight.nvim', opts = {} },
+    { 'nvim-lualine/lualine.nvim' },
+    { 'nvimdev/dashboard-nvim', event = 'VimEnter', config = true },
+    { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
+    { 'folke/which-key.nvim', event = 'VeryLazy', opts = {} },
+
+    -- LSP, Completion & Tools
+    { 'williamboman/mason.nvim', opts = {} },
+    { 'neovim/nvim-lspconfig' },
+    { 'nvim-treesitter/nvim-treesitter', opts = require('tree-sitter') },
+    { 'mrcjkb/rustaceanvim', lazy = false },
     { 'simrat39/rust-tools.nvim' },
-	{ 'L3MON4D3/LuaSnip', build = 'make install_jsegexp', opts={} },
-	{ 'nvim-treesitter/nvim-treesitter', opts=require('tree-sitter') },
-	{ 'neovim/nvim-lspconfig' },
-	{ 'hrsh7th/cmp-nvim-lsp' },
-	{ 'hrsh7th/cmp-buffer' },
-	{ 'hrsh7th/cmp-path' },
-	{ 'hrsh7th/cmp-cmdline' },
-	{ 'hrsh7th/nvim-cmp' },
-    
-    -- Git specific
+
+    -- Completion Engine & Sources
+    { 'nvim-lua/completion-nvim' },
+    { 'hrsh7th/nvim-cmp' },
+    { 'hrsh7th/cmp-nvim-lsp' },
+    { 'hrsh7th/cmp-buffer' },
+    { 'hrsh7th/cmp-path' },
+    { 'hrsh7th/cmp-cmdline' },
+    { 'L3MON4D3/LuaSnip', build = 'make install_jsegexp', opts = {} },
+
+    -- Git Integration
     { 'tpope/vim-fugitive' },
-    { 'lewis6991/gitsigns.nvim', opts=require'gitsetup' },
+    { 'lewis6991/gitsigns.nvim', opts = require('gitsetup') },
     { 'nvim-lua/plenary.nvim' },
-    { 'kdheepak/lazygit.nvim',
-        cmd={ 'LazyGit' }, 
-        keys={ { 'gg', '<cmd>LazyGit<CR>', desc='Open LazyGit' } },
+    {
+        'kdheepak/lazygit.nvim',
+        cmd = { 'LazyGit' },
+        keys = { { 'gg', '<cmd>LazyGit<CR>', desc = 'Open LazyGit' } },
     },
 }
+
