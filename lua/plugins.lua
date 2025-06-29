@@ -5,15 +5,13 @@ return {
 
     -- Commandline & Popup UI
     { 'MunifTanjim/nui.nvim' },
-    { 'rcarriga/nvim-notify' },
     { 'folke/noice.nvim', event = 'VeryLazy', opts = {} },
 
     -- UI & Theming
     { 'folke/tokyonight.nvim', opts = {} },
     { 'nvim-lualine/lualine.nvim' },
-    { 'nvimdev/dashboard-nvim', event = 'VimEnter', config = true },
-    { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
-    { 'folke/which-key.nvim', event = 'VeryLazy', opts = {} },
+    { 'nvimdev/dashboard-nvim', event = 'VimEnter', opts=require'dashboard-setup' },
+    { 'folke/which-key.nvim', event = 'VeryLazy', opts={} },
 
     -- LSP, Completion & Tools
     { 'williamboman/mason.nvim', opts = {} },

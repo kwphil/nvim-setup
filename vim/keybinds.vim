@@ -3,6 +3,5 @@ set number relativenumber
 set nu rnu
 set nowrap
 
-command Fq NvimTreeToggle
-command O  Fq
-command F  NvimTreeFocus
+command E   NvimTreeToggle
+command F   NvimTreeFocus
