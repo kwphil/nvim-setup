@@ -15,22 +15,22 @@ return {
         end
 
         -- Navigation
-        map('n', 'gnh', function()
+        map('n', 'ghd', function()
             if vim.wo.diff then return ']c' end
             vim.schedule(gs.next_hunk)
             return '<Ignore>'
         end, { expr = true })
 
-        map('n', 'gph', function()
+        map('n', 'gha', function()
             if vim.wo.diff then return '[c' end
             vim.schedule(gs.prev_hunk)
             return '<Ignore>'
         end, { expr = true })
 
         -- Actions
-        map('n', 'ghs', gs.stage_hunk)
-        map('n', 'ghr', gs.reset_hunk)
-        map('n', 'ghp', gs.preview_hunk)
-        map('n', 'ghb', gs.blame_line)
+        map('n', 'ghj', gs.stage_hunk)
+        map('n', 'ghm', gs.reset_hunk)
+        map('n', 'ghk', gs.preview_hunk)
+        map('n', 'ghn', gs.blame_line)
     end,
 }

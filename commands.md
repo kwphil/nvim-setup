@@ -5,9 +5,16 @@
     * :E - Toggle the file list
 
 * **Git**
-    * gnh - The beginning of the next hunk
-    * gph - The end of the last hunk
-    * ghs - Stage the hunk
-    * ghr - Reset the hunk
-    * ghp - Preview the hunk
-    * ghb - Blame line
+    * gg  - Open LazyGit
+    * ghd - The beginning of the next hunk
+    * gha - The end of the last hunk
+    * ghj - Stage the hunk
+    * ghm - Reset the hunk
+    * ghk - Preview the hunk
+    * ghn - Blame line
+
+* **cmp**
+    * TAB - select item
+    * SHIFT + TAB - select previous item
+    * CTRL + M - Confirm
+
