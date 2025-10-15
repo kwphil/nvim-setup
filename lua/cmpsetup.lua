@@ -1,5 +1,5 @@
-local snip = require'luasnip'
 local cmp = require'cmp'
+local snip = require'luasnip'
 
 cmp.setup({
 	snippet = {
@@ -16,6 +16,8 @@ cmp.setup({
     
     sources = {
         { name = 'nvim_lsp' },
+        { name = 'luasnip' },
         { name = 'buffer' },
+        { name = 'path' },
     },
 })
